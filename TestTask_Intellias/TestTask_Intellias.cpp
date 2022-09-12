@@ -12,6 +12,7 @@ using namespace std;
 
 int main()
 {
+
     ifstream inputFile;
     inputFile.open("C:\\test_file.csv");
     if (!inputFile.is_open()) {
@@ -31,6 +32,7 @@ int main()
         string task{ "" };
         string date{ "" };
         string logger_hours{ "" };
+        string temporaryStr{ "" };
 
         stringstream inputString(line);
 
@@ -43,7 +45,7 @@ int main()
         getline(inputString, date, ';');
         getline(inputString, logger_hours, ';');
 
-        EmployeeInformation employee(name, mail, department, 
+        EmployeeInformation employee(name, mail, department,
             position, project, task, date, logger_hours);
 
 
@@ -51,6 +53,7 @@ int main()
 
         line = "";
     }
+    cout << "Name, Mounth, Total hours:" << endl;
     for (auto& employee : employees) {
         employee.printInformation();
     }
