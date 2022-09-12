@@ -18,12 +18,12 @@
     <ClCompile Include="TestTask_Intellias.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Empoyee_Information.cpp">
+    <ClCompile Include="EmployeeInformation.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Empoyee_Information.h">
+    <ClInclude Include="EmployeeInformation.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
